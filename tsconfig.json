@@ -1,0 +1,58 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "src/*": [
+          "./src/*"
+        ],
+        "pages/*": [
+          "./pages/*"
+        ],
+        "containers/*": [
+          "./src/containers/*"
+        ],
+        "components/*": [
+          "./src/components/*"
+        ],
+        "svgs/*": [
+          "./src/svgs/*"
+        ],
+        "styleguide/*": [
+          "./src/styleguide/*"
+        ],
+        "images/*": [
+          "./public/static/images/*"
+        ]
+      },
+      "target": "es5",
+      "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext"
+      ],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "strict": false,
+      "forceConsistentCasingInFileNames": true,
+      "noEmit": true,
+      "esModuleInterop": true,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "jsx": "preserve",
+      "incremental": true
+    },
+    "include": [
+      "next-env.d.ts",
+      "**/*.ts",
+      "**/*.tsx",
+      "src/src/style"
+  , "pages/_app.js", "src/components/Navbar.jsx", "src/containers/home/components/Footer.jsx", "src/containers/home/components/FadeInWhenVisible.tsx", "src/containers/home/components/BottomToUp.tsx", "src/container/Home/components/starfield/particle.js", "src/container/Home/components/starfield/index.jsx"  ],
+    "exclude": [
+      "node_modules",
+      ".next",
+      "out"
+    ]
+  }
+  

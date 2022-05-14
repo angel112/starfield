@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-color: #080627;
+}
+
+.anim {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+}
+
+.section-1 {
+  position: fixed;
+  background: transparent;
+  width: 100vw;
+  z-index: 2;
+}
+
+.text-w {
+  color: white;
+  font-size: 56px;
+  font-family: Inter;
+  text-align: center;
+}
+
+.text-s {
+  color: #c8c8c8;
+  font-size: 24px;
+}
+
+.containers {
+  margin: 192px auto 0 auto;
+  width: 645px;
+  text-align: center;
+  font-family: Inter;
+}
+/*# sourceMappingURL=Home.css.map */

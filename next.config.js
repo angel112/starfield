@@ -3,4 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+const withTM = require('next-transpile-modules')(['@splinetool/react-spline', '@splinetool/runtime', 'react-spline']);
+
+
+module.exports = withTM(nextConfig);
