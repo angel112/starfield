@@ -22,24 +22,27 @@ const Starfield = ({ style, size, ...rest }) => {
     const canvas = canvasRef.current;
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+    canvas.style.position = "fixed";
     stars.map((star) => {
-      console.log({ star });
       star.update();
     })
   }
 
   useEffect(() => {
-    for (let i = 0; i < 300; i++) {
+    for (let i = 0; i < 400; i++) {
       const particle = new Particle(randomIntFromInterval((-1) * (bounds.width / 2 - 20), bounds.width / 2 - 20),  randomIntFromInterval((-1) * (bounds.height / 2 - 20), bounds.height / 2 - 20), bounds, randomIntFromInterval(1, 500))
       stars.push(particle);
     }
     animate();
   }, []);
 
+
+
   return (
     <div
       style={{
         overflow: "hidden",
+        height: "300vh",
         ...style,
       }}
       {...rest}
